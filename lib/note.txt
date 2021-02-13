@@ -1,0 +1,26 @@
+=== Create Flutter ===
+ctrl + shift + p หา flutter เพื่อสร้างไฟล์
+
+=== File ===
+จะมีพวก Android & IOS Native
+พวกไฟล์ที่เราจะเขียน อยู่ใน lib
+
+pubspec.yaml คล้าย package.json (node.js)
+    dependencies ลงตัว library ที่มันจะพร้อมไปกับตัว Application
+
+>> open -a Simulator
+เรียก Simulator
+>> flutter run -d all
+รันเวอร์ชั่น
+>> flutter upgrade
+ีupgrade sdk
+
+กด p เพื่อเปิด debug paint
+
+=== Stateless & Stateful Widgets ===
+Stateless Widgets: constructor => build(loop)
+    A single Stateless can build in many different build context.
+    สั่งสร้างปุบ build เลยไม่ต้อง check อะไรมาก
+Stateful Widgets: constructor => createState(loop)
+    A Stateful creates a new state object for each build context.
+    create state ของตัวแปรก่อน
